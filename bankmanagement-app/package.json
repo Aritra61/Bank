@@ -23,7 +23,7 @@
     "@angular/router": "~10.0.14",
     "@ngx-formly/core": "^5.10.1",
     "@rxweb/reactive-form-validators": "^2.1.0",
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.6.0",
     "ngx-webstorage": "^6.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
