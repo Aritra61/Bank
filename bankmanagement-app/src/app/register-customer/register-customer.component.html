@@ -4,14 +4,14 @@
 <div class="container">
             <div class="col-lg-12">
         <div class="row">      
-        <div class="form-group input_field" class="col-sm">
+        <div class="col-sm input_field">
             <label for="name">Username</label>
             <input type="text" class="form-control" id="username" required [(ngModel)]="customer.username"
                 name="username">
                 <p></p>
         </div>
 
-        <div class="form-group input_field" class="col-sm">
+        <div class="col-sm input_field">
             <label for="name">Password</label>
             <input type="password" class="form-control" id="password" required [(ngModel)]="customer.password"
                 name="password" (focusout)="onChangepassword($event)">
@@ -19,14 +19,14 @@
         </div>
     </div>  
         <div class="row">
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="name">Customer Name</label>
             <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name"
                 (keypress)="onChangename($event)">
                 <p></p>
         </div>
 
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="address">Address:</label>
             <input type="text" class="form-control" id="address" required [(ngModel)]="customer.address" name="address">
         <p></p>
@@ -34,14 +34,14 @@
     </div>
 
     <div class="row">
-       <div class="form-group" class="col-sm">
+       <div class="col-sm input_field">
             <label for="email">Please mention email:</label>
             <input type="email" id="email" class="form-control" name="email" [(ngModel)]="customer.email"
                 (focusout)="checkEmail($event)">
             <p class="error">{{errorMsgEmail}}</p>
         </div>
 
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="gender">Please mention gender:</label>
             <select name="gender" class="form-control" id="gender" [(ngModel)]="customer.gender">
                 <option value="male">male</option>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="row">
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="marital"> martial status:</label>
             <select name="marital" class="form-control" id="marital" [(ngModel)]="customer.maritalStatus">
                 <option value="married">married</option>
@@ -62,7 +62,7 @@
             <p></p>
         </div>
 
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="contact">Please mention contact no:</label>
             <input type="number" class="form-control" id="contact" name="contact" maxlength="10"
                 [(ngModel)]="customer.contactNumber" (focusout)="checkLength($event)">
@@ -71,7 +71,7 @@
     </div>
 
     <div class="row">
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="account_type">Account type:</label>
             <select name="account_type" class="form-control" id="account_type" [(ngModel)]="customer.accountType">
                 <option value="salary">salary</option>
@@ -80,7 +80,7 @@
             <p></p>
         </div>
 
-        <div class="form-group" class="col-sm">
+        <div class="col-sm input_field">
             <label for="date_of_birth">Date of birth:</label>
             <input name="dob" type="date" [max]="minDate" class="form-control" [(ngModel)]="customer.dateOfBirth"/>
             <p></p>
@@ -88,7 +88,7 @@
         </div>
     </div>
 </div>
-    <div class="action">
+    <div class="action" class="submit">
         <button type="submit" >Submit</button>
         <button type="button" (click)="onCancel()">Cancel</button>
     </div>
